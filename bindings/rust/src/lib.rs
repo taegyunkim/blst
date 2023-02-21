@@ -1001,7 +1001,7 @@ macro_rules! sig_variant_impl {
 
         #[derive(Debug, Clone, Copy)]
         pub struct Signature {
-            point: $sig_aff,
+            pub point: $sig_aff,
         }
 
         impl Signature {
@@ -1389,7 +1389,7 @@ macro_rules! sig_variant_impl {
 
         #[derive(Debug, Clone, Copy)]
         pub struct AggregateSignature {
-            point: $sig,
+            pub point: $sig,
         }
 
         impl AggregateSignature {
